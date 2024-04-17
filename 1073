@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main(void)
+{
+	long long int num = 1;
+	while (num != 0) //0이 아닐때 까지
+	{
+		scanf("%lld", &num);
+		if (num != 0) //num이 0이 아니라면 출력하고 0이면 출력 중단
+		{
+			printf("%lld\n", num);
+		}
+	}
+
+	return 0;
+}

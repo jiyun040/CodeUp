@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main(void)
+{
+	char x;
+	char i = 'a';
+	scanf("%c", &x);
+	do
+	{
+		printf("%c ", i);
+		i += 1;
+	} while (i <= x); //a부터 입력된 문자 까지 출력
+
+	return 0;
+}

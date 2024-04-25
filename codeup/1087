@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main(void)
+{
+	int num;
+	int i;
+	int sum = 0;
+
+	scanf("%d", &num);
+
+	for (i = 1; ; i++) //조건이 없을 시에는 무한 반복
+	{
+		sum += i;
+		if (sum >= num)
+		{
+			break; //참이면 가장 가까운 반복 코드블록의 밖으로
+		}
+	}
+
+	printf("%d", sum); //break 실행시 중단하고 여기로
+
+	return 0;
+}

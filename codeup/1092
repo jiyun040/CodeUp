@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main(void)
+{
+	int a;
+	int b;
+	int c;
+	int day = 1;
+	
+	scanf("%d %d %d", &a, &b, &c);
+
+	while (day % a != 0 || day % b != 0 || day % c != 0)
+	{//day가 세 명의 사용자의 문제 푸는 주기 중
+	//하나로 나눠 떨어지지 않으면 다음 날짜 확인
+		day++;
+	}
+	
+	printf("%d", day);
+
+	return 0;
+}
